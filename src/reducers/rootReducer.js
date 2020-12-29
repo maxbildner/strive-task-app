@@ -11,22 +11,48 @@ export default rootReducer;
 
 // EXAMPLE REDUX STORE:
 // {
-//   tasks: {
+//   "9:00 - 10:00a": {
 //     1: {
 //       id: 1,
-//       type: "MANUAL", 	                  // can be "CALL" or "MANUAL", or "LI" (linked in message)
+//       type: "CALL", 	                      // can be "CALL" or "MANUAL", or "LI" (linked in message)
+//       person: "Avni Submaranian",
+//       time: "9:00 - 10:00a",
+//       notes: "Inbound NY",
+//       completed: false
+//     },
+//     2: {
+//       id: 2,
+//       type: "MANUAL",
 //       person: "Malik Simpson",
 //       time: "9:00 - 10:00a",
 //       notes: "Rekindling ancient members",
 //       completed: false
 //     },
-//     2: {
-//       id: 2,
-//       type: "CALL", 	                    
-//       person: "Max Bildner,
-//       time: 9am - 10am,
+//     3: {
+//       id: 3,
+//       type: "CALL",
+//       person: "Jabroni F. Myers",
+//       time: "9:00 - 10:00a",
+//       notes: "Shaming bottom-feeeders",
 //       completed: false
 //     },
-//     completed: [ ]                       // will contain ids of completed tasks
+//   },
+//   "11:15a - 12:00p": {
+//     4: {
+//       id: 4,
+//       type: "LI",
+//       person: "Yvette Mok",
+//       time: "11:15a - 12:00p",
+//       notes: "Ignore and solicit on",
+//       completed: false
+//     },
+//     5: {
+//       id: 5,
+//       type: "MANUAL",
+//       person: "Xavier St. D'Augustine",
+//       time: "11:15a - 12:00p",
+//       notes: "Ignore and solicit on",
+//       completed: false
+//     },
 //   }
-// }
+// };
