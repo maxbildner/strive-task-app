@@ -15,12 +15,14 @@ const store = createStore(rootReducer);
 document.addEventListener('DOMContentLoaded', () => {
 
   // FOR TESTING
+  // ********************************
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   // console.log(store.getState());
+  // ********************************
 
   // Provider allows App component access to redux store
-  // grab html element by id = app, and render App Component
+  // grab html element by id = root, and render App Component
   ReactDOM.render(
     <Provider store={store}>
       <App />
@@ -28,13 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('root')
   );
 });
-
-
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );

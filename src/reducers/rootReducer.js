@@ -14,17 +14,19 @@ export default rootReducer;
 //   tasks: {
 //     1: {
 //       id: 1,
-//       type: “call” 	                                                        // can be “call”, or “manual”
-//       body: “Call Max Bildner”
-//       time: 9am - 10am
+//       type: "MANUAL", 	                  // can be "CALL" or "MANUAL", or "LI" (linked in message)
+//       person: "Malik Simpson",
+//       time: "9:00 - 10:00a",
+//       notes: "Rekindling ancient members",
 //       completed: false
 //     },
 //     2: {
 //       id: 2,
-//       type: “call” 	                                                        // can be “call”, or “manual”
-//       body: “Call Max Bildner”
-//       time: 9am - 10am
+//       type: "CALL", 	                    
+//       person: "Max Bildner,
+//       time: 9am - 10am,
 //       completed: false
-//     }
+//     },
+//     completed: [ ]                       // will contain ids of completed tasks
 //   }
 // }
