@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './components/App';
+import AppContainer from './containers/AppContainer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // grab html element by id = root, and render App Component
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <AppContainer />
     </Provider>,
     document.getElementById('root')
   );
