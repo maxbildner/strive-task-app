@@ -72,18 +72,18 @@ body {
 }
 
 .App-wrap {
-  background: white;
+  /* background: white; */
 }
 
 .App {
   width: 45rem;
-  /* background: lightcoral; */
+  /* background: white; */
   margin: 0 auto;
 }
 
 .time-block {
   margin: 2rem 0;
-  /* background: lightgrey; */
+  background: white;
   border: 2px solid #d3d3d366;
   box-sizing: border-box;
   border-radius: 4px;
