@@ -25,7 +25,7 @@ const predefinedState = {
       type: "CALL", 	                      
       person: "Jabroni F. Myers",
       time: "9:00 - 10:00a",
-      notes: "Shaming bottom-feeeders",
+      notes: "Shaming bottom-feeders",
       completed: false
     },
   },

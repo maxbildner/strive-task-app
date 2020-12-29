@@ -66,13 +66,71 @@ table {
 
 /* ****************************************************************************/
 body {
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
+  background: #f8f8f8;
+  font-family: sans-serif;
 }
 
 .App-wrap {
-  background: lightblue;
+  background: white;
 }
 
-/* .App {
+.App {
+  width: 45rem;
+  /* background: lightcoral; */
+  margin: 0 auto;
+}
 
-} */
+.time-block {
+  margin: 2rem 0;
+  /* background: lightgrey; */
+  border: 2px solid #d3d3d366;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  /* background: lightgreen; */
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d3d366;
+  box-sizing: border-box;
+}
+
+.row:hover {
+  cursor: pointer;
+  background: #0e7a9e47;;
+}
+
+.row-left {
+  display: flex;
+  width: 28rem;
+  justify-content: flex-start;
+  /* background: azure; */
+  height: 4rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-right: 1rem;
+  margin-top: .7rem;
+}
+
+.notes {
+  color: lightgrey;
+  margin-bottom: .4rem;
+}
+
+.person {
+  font-weight: 600;
+}
+
+.row-right {
+  /* background: aqua; */
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}

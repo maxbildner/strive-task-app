@@ -22,8 +22,15 @@ class App extends React.Component {
       return (
         <div className="row" key={idx}>
           <div className="row-left">
-            <span>LOGO</span>
-            <div>{task.person}</div>
+            <span className="logo">LOGO</span>
+            <div className="notes-person">
+              <div className="notes">
+                {task.notes}
+              </div>
+              <div className="person">
+                {task.person}
+              </div>
+            </div>
           </div>
           <div className="row-right">
             <span>X</span>
