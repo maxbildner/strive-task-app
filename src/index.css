@@ -171,7 +171,8 @@ body {
   width: 12rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 1.2rem;
+  /* margin-top: 1.2rem; */
+  margin-top: .9rem;
 }
 
 .delete.hidden {
@@ -218,8 +219,10 @@ svg.details-hovered {
 }
 
 .circle {  
-  height: 2.25rem;
-  width: 2.25rem;
+  /* height: 2.25rem;
+  width: 2.25rem; */
+  height: 2.45rem;
+  width: 2.45rem;
   border-radius: 50%;
   border: 1px solid lightgrey;
   box-shadow: 0px 1px 2px lightgrey;
@@ -238,7 +241,7 @@ svg.details-hovered {
 #clicked {
   transition: .5s;
   transition-timing-function: ease-out;
-  transform: translateX(2rem);
+  transform: translateX(2.5rem);
   border: 1px solid #7d99fb;
   background: #f4f5ff;
 }
@@ -246,7 +249,7 @@ svg.details-hovered {
 #not-clicked {
   transition: .5s;
   transition-timing-function: ease-out;
-  transform: translateX(-1.5rem);
+  /* transform: translateX(-1.5rem); */
 }
 
 
