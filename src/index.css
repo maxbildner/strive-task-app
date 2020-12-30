@@ -142,7 +142,10 @@ body {
 
 .logo svg {
   fill: #7d99fb;
+}
 
+.logo.hidden {
+  display: none;
 }
 
 .notes {

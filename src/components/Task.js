@@ -36,7 +36,7 @@ class Task extends React.Component {
     }
 
     const { isMouseOver, isClicked } = this.state;
-    console.log(isClicked);
+    
     return (
       <div 
         className={isLastTime ? "row last" : (index === 0 ? "row first" : "row")} 
@@ -47,13 +47,15 @@ class Task extends React.Component {
         onClick={() => this.setState({isClicked: !this.state.isClicked})}
       >
         <div className="row-left">
-          <span className="logo">{logo}</span>
+          <span 
+            className={isClicked ? "logo hidden" : "logo"}
+          >{logo}</span>
           <div className="notes-person">
             <div className="notes">
               {task.notes}
             </div>
             <div className="type-person">
-              <span className="type">{task.type}</span> {(task.type === "LinkedIn message") ? "" : <span className="with">{"with"}</span>} <span className="person">{task.person}</span>
+              <span className="type">{task.type}</span> {(task.type === "Manual task") ? <span className="with">{"with"}</span> : ""} <span className="person">{task.person}</span>
             </div>
           </div>
         </div>
