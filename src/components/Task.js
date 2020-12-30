@@ -62,12 +62,14 @@ class Task extends React.Component {
             isMouseOverRow={isMouseOver}
             isRowClicked={isClicked} 
             type="delete"
-          />
+            // onClick={() => handleDeleteTask(task.id, task.time)}
+            />
 
           <Icon 
             isMouseOverRow={isMouseOver}
             isRowClicked={isClicked} 
             type="complete"
+            onClickIcon={() => handleDeleteTask(task.id, task.time)}
           />
 
           <Icon 
