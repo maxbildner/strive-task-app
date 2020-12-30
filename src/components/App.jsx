@@ -11,7 +11,7 @@ class App extends React.Component {
   // }
 
   // renders a div (for a certain timeperiod) that contains rows of tasks
-  renderTimeBlock(timeBlock, i) {
+  renderTimeBlock(timeBlock, i, time) {
     // timeBlock == { {0:{}, 1:{}, ... }
 
     // Render Rows
@@ -25,10 +25,15 @@ class App extends React.Component {
       );
     });
 
+    let timeBlockTime;
+
+    // if timeblock is empty, there are no times for that block, so exit
+    // if (Object.keys(timeBlock) === 0) return;
+
     return (
       <div className="time-block-wrap" key={i}>
         <div className="time" key={i}>
-          {(timeBlock[1] || timeBlock[4] || {}).time}
+          {time}
         </div>
 
         <div 
@@ -51,15 +56,19 @@ class App extends React.Component {
     let userTasksVals = Object.values(userTasks);
     // userTasksVals == [ {0:{}, 1:{},...}, {4:{}, 5:{}} ]
 
+    let userTasksTimes = Object.keys(userTasks);
+    // userTasksTimes == [ "9:00 - 10:00a", "11:15a - 12:00p" ]
+
     // will contain divs (that correspond to different time blocks)
     let timeBlocks = [];
 
     // loop over time blocks
     for (let i = 0; i < userTasksVals.length; i++) {
       let timeBlock = userTasksVals[i];
+      let time = userTasksTimes[i];
 
       // render div time block that contains rows of tasks
-      timeBlocks.push(this.renderTimeBlock(timeBlock, i));
+      timeBlocks.push(this.renderTimeBlock(timeBlock, i, time));
     }
 
     return (

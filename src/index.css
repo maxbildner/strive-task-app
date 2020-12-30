@@ -129,16 +129,18 @@ body {
   margin-top: .7rem;
 }
 
+.logo svg {
+  fill: #005c7ab5;
+}
+
 .notes {
   color: lightgrey;
   margin-bottom: .4rem;
 }
 
-.type {
-  font-weight: 600;
-}
-
+.type, 
 .person {
+  color: #0258a4;
   font-weight: 600;
 }
 
@@ -177,4 +179,11 @@ body {
 .details.hovered svg:hover {
   fill: #0258a4;
   transform: scale(1.2);
+}
+
+.delete,
+.complete,
+.details.hovered svg {
+  transition: all .5s;
+  transform-origin: 50% 50%;
 }
