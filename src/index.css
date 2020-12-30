@@ -150,19 +150,6 @@ body {
   margin-top: 1.5rem;
 }
 
-/* .delete.hidden {
-  display: none;
-}
-
-.complete.hidden {
-  display: none;
-}
-
-.details.hidden {
-  display: none;
-} */
-
-
 .delete.hidden {
   visibility: hidden;
 }
@@ -173,4 +160,21 @@ body {
 
 .details.hidden {
   visibility: hidden;
+}
+
+.details svg {
+  fill: lightgrey;
+}
+
+.details.hovered svg,
+.delete,
+.complete {
+  fill: lightblue;
+}
+
+.delete:hover,
+.complete:hover,
+.details.hovered svg:hover {
+  fill: #0258a4;
+  transform: scale(1.2);
 }
