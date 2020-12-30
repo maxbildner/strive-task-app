@@ -81,12 +81,22 @@ body {
   margin: 0 auto;
 }
 
+.time-block-wrap {
+  margin: 2.5rem 0;
+}
+
 .time-block {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   background: white;
   border: 2px solid #d3d3d366;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.time {
+  color: lightgrey;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .row {

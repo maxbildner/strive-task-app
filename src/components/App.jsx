@@ -37,15 +37,24 @@ class App extends React.Component {
             <span>C</span>
             <span>{">"}</span>
           </div>
-
         </div>
 
       );
     });
+    
 
     return (
-      <div className="time-block" key={i}>
-        {times}
+      <div className="time-block-wrap" key={i}>
+        <div className="time" key={i}>
+          {(timeBlock[1] || timeBlock[4] || {}).time}
+        </div>
+
+        <div 
+          className="time-block" 
+          key={i + 1}
+        >
+          {times}
+        </div>
       </div>
     );
   }
