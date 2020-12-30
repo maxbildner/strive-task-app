@@ -33,6 +33,8 @@ class Task extends React.Component {
       logo = (<svg height="15pt" viewBox="-59 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg"><path d="m344.675781 39.398438h-48.671875v-19.398438c0-11.046875-8.953125-20-20-20h-157.339844c-11.046874 0-20 8.953125-20 20v19.398438h-48.664062c-27.570312 0-50 22.429687-50 50v372.601562c0 27.570312 22.429688 50 50 50h294.675781c27.570313 0 50-22.429688 50-50v-372.601562c0-27.570313-22.433593-50-50-50zm-88.671875.601562v38.800781h-117.34375c0-13.292969 0-24.273437 0-38.800781zm98.671875 422c0 5.515625-4.488281 10-10 10h-294.675781c-5.515625 0-10-4.484375-10-10v-372.601562c0-5.511719 4.484375-10 10-10h48.660156v19.402343c0 11.046875 8.957032 20 20 20h157.34375c11.042969 0 20-8.953125 20-20v-19.402343h48.671875c5.511719 0 10 4.488281 10 10zm-64.535156-228.480469c7.8125 7.8125 7.8125 20.476563 0 28.285157l-105.101563 105.101562c-7.808593 7.8125-20.472656 7.8125-28.285156 0l-52.230468-52.230469c-7.808594-7.808593-7.808594-20.472656 0-28.285156 7.8125-7.808594 20.472656-7.808594 28.285156 0l38.089844 38.089844 90.957031-90.957031c7.8125-7.8125 20.472656-7.8125 28.285156-.003907zm0 0" /></svg>);
     }
 
+    const { isMouseOver, isClicked } = this.state;
+
     return (
       <div 
         className={isLastTime ? "row last" : (index === 0 ? "row first" : "row")} 
@@ -56,7 +58,7 @@ class Task extends React.Component {
         
         <div className="row-right">
           <span 
-            className={this.state.isMouseOver ? "delete" : "delete hidden"}
+            className={(isMouseOver || isClicked) ? "delete" : "delete hidden"}
             // onClick={() => handleDeleteTask(task.id, task.time)}
             >
             <span className="circle"></span>
@@ -64,7 +66,7 @@ class Task extends React.Component {
           </span>
 
           <span 
-            className={this.state.isMouseOver ? "complete" : "complete hidden"}
+            className={(isMouseOver || isClicked) ? "complete" : "complete hidden"}
             onClick={() => handleDeleteTask(task.id, task.time)}
           >
             <span className="circle"></span>
@@ -72,7 +74,7 @@ class Task extends React.Component {
           </span>
 
           <span 
-            className={this.state.isMouseOver ? "details hovered" : "details"}
+            className={(isMouseOver || isClicked) ? "details hovered" : "details"}
           >
             <span className="circle"></span>
             <svg height="15pt" widht="15pt" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M174.54,508.94,420.1,263.39a10.74,10.74,0,0,0,0-14.75L174.53,3.06a10.43,10.43,0,0,0-14.75,0L92,70.8a10.43,10.43,0,0,0,0,14.75L262.47,256,92,426.46a10.73,10.73,0,0,0,0,14.75l67.75,67.73A10.43,10.43,0,0,0,174.54,508.94Z" /></svg>
