@@ -68,7 +68,6 @@ table {
 body {
   /* background: #f9f9f9; */
   background: #f8f8f8;
-  /* font-family: sans-serif; */
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -107,12 +106,14 @@ body {
   justify-content: space-between;
   border: 1px solid #d3d3d366;
   box-sizing: border-box;
+  height: 4.5rem;
+  padding-right: 1rem;
 }
 
 .row:hover {
+  /* background: #00759c17; */
   cursor: pointer;
   border: 1px solid #7d99fb;
-  /* background: #00759c17; */
   background: #f4f5ff;
 }
 
@@ -129,10 +130,7 @@ body {
   display: flex;
   width: 28rem;
   justify-content: flex-start;
-  height: 4rem;
   padding: 1rem;
-  /* padding-top: 1rem;
-  padding-left: 1rem; */
   box-sizing: border-box;
 }
 
@@ -146,7 +144,6 @@ body {
 }
 
 .notes {
-  /* color: lightgrey; */
   color: darkgrey;
   margin-bottom: .4rem;
 }
@@ -174,7 +171,7 @@ body {
   width: 12rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .delete.hidden {
@@ -222,7 +219,7 @@ svg.details-hovered {
 }
 
 .circle {
-  height: 2rem;
+  /* height: 2rem;
   width: 2rem;
   border-radius: 50%;
   border: 1px solid lightgrey;
@@ -230,11 +227,23 @@ svg.details-hovered {
   box-shadow: 0px 1px 2px lightgrey;
   position: absolute;
   bottom: .8rem;
-  right: -32%;
+  right: -32%; */
+  
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 1px 2px lightgrey;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle.hidden {
-  visibility: hidden;
+  border: none;
+  box-shadow: none;
 }
 
 #clicked {
