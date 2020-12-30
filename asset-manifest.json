@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/strive-task-app/static/css/main.1d4bd0dc.chunk.css",
-    "main.js": "/strive-task-app/static/js/main.29d2e86d.chunk.js",
-    "main.js.map": "/strive-task-app/static/js/main.29d2e86d.chunk.js.map",
+    "main.js": "/strive-task-app/static/js/main.82c995d8.chunk.js",
+    "main.js.map": "/strive-task-app/static/js/main.82c995d8.chunk.js.map",
     "runtime-main.js": "/strive-task-app/static/js/runtime-main.8b7b562d.js",
     "runtime-main.js.map": "/strive-task-app/static/js/runtime-main.8b7b562d.js.map",
     "static/js/2.5840482b.chunk.js": "/strive-task-app/static/js/2.5840482b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.8b7b562d.js",
     "static/js/2.5840482b.chunk.js",
     "static/css/main.1d4bd0dc.chunk.css",
-    "static/js/main.29d2e86d.chunk.js"
+    "static/js/main.82c995d8.chunk.js"
   ]
 }
