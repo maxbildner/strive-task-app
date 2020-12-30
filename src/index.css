@@ -109,7 +109,8 @@ body {
 
 .row:hover {
   cursor: pointer;
-  background: #0e7a9e47;;
+  /* background: #0e7a9e47; */
+  background: #00759c17;
 }
 
 .row-left {
