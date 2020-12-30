@@ -15,7 +15,7 @@ class Task extends React.Component {
 
   render() {
 
-    const { task, index, handleDeleteTask } = this.props;
+    const { task, index, handleDeleteTask, isLastTime } = this.props;
     // task == {id: 1, type: "Call", person: "Avni Submaranian", time: "9:00 - 10:00a", notes: "Inbound NY", …}
     // debugger
 
@@ -35,7 +35,8 @@ class Task extends React.Component {
 
     return (
       <div 
-        className="row" 
+        // className="row" 
+        className={isLastTime ? "row last" : (index === 0 ? "row first" : "row")} 
         key={index}
         onMouseEnter={() => this.setState({isMouseOver: true})}
         onMouseLeave={() => this.setState({isMouseOver: false})}

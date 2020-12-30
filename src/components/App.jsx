@@ -18,17 +18,20 @@ class App extends React.Component {
     let times = Object.values(timeBlock).map( (task, idx) => {
 
       // task == {id: 1, type: "Call", person: "Avni Submaranian", time: "9:00 - 10:00a", notes: "Inbound NY", …}
-      // debugger
+      let isLastTime = (Object.values(timeBlock).length - 1) === idx;
 
       return (
-        <Task task={task} key={idx} index={idx} handleDeleteTask={(taskId, time) => this.props.deleteTask(taskId, time)}/>
+        <Task 
+          task={task} 
+          key={idx} 
+          index={idx} 
+          isLastTime={isLastTime}
+          handleDeleteTask={(taskId, time) => this.props.deleteTask(taskId, time)}/>
       );
     });
 
-    let timeBlockTime;
-
     // if timeblock is empty, there are no times for that block, so exit
-    // if (Object.keys(timeBlock) === 0) return;
+    if (Object.keys(timeBlock) === 0) return null;
 
     return (
       <div className="time-block-wrap" key={i}>
