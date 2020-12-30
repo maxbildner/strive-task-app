@@ -17,7 +17,7 @@ const predefinedState = {
       type: "Manual task", 	                      
       person: "Malik Simpson",
       time: "9:00 - 10:00a",
-      notes: "Rekindling ancient members",
+      notes: "Rekindling ancient embers",
       completed: false
     },
     3: {

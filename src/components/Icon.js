@@ -43,6 +43,7 @@ class Icon extends React.Component {
         <span
           className={(isRowClicked || isMouseOverIcon) ? "circle" : "circle hidden"}
         ></span>
+
         {svgLogo}
       </span>
     );

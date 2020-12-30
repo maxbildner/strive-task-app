@@ -3,12 +3,6 @@ import Task from './Task';
 
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   // props.userTasks == { 9:00-10:00a:{ {}, {} },  11-12p:{ {}, {} } } 
-  //   // debugger
-  //   // this.renderTimeBlock = this.renderTimeBlock.bind(this);
-  // }
 
   // renders a div (for a certain timeperiod) that contains rows of tasks
   renderTimeBlock(timeBlock, i, time) {
