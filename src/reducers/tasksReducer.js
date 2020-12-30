@@ -1,4 +1,4 @@
-// import { ADD_TASK, DELETE_TASK, COMPLETE_TASK } from '../actions/userActions';
+import { DELETE_TASK, COMPLETE_TASK } from '../actions/userActions';
 // import { merge } from 'lodash';
 
 // prepopulated store with 5 tasks
@@ -57,8 +57,27 @@ const tasks = (oldState = predefinedState, action) => {
   Object.freeze(oldState);
 
   let newState;
+  switch (action.type) {
 
-  return oldState;
+    case DELETE_TASK:
+      // action == { type: "DELETE_TASK", taskId: 4, time: "11:15a - 12:00p" }
+
+      // copy timeBlock
+      let timeBlockCopy = Object.assign({}, oldState[action.time]);
+
+      // delete obj from timeblock based off of taskId
+      delete timeBlockCopy[action.taskId];
+
+      // update newState
+      newState = Object.assign({}, oldState, {
+        [action.time]: timeBlockCopy
+      });
+
+      return newState;
+
+    default:
+      return oldState;
+  }
 }
 
 export default tasks;

@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
+import { deleteTask } from '../actions/userActions';
 import App from '../components/App';
+
 
 
 // give app component acceess to tasks in store
@@ -15,6 +17,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return({
+    deleteTask: (taskId, time) => dispatch(deleteTask(taskId, time))
   });
 }
 
