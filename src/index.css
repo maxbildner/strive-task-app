@@ -192,7 +192,7 @@ body {
 .complete:hover,
 .details.hovered svg:hover {
   fill: #0258a4;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .circle {
@@ -207,12 +207,13 @@ body {
   top: .20rem;
 }
 
-/* .delete,
-.complete,
-.details.hovered svg {
-  transition: all .25s;
-  transform-origin: 50% 50%;
-} */
+.circle.hidden {
+  visibility: hidden;
+}
+
+#circle-id:hover {
+  visibility: visible !important;
+}
 
 #clicked {
   transition: .5s;
