@@ -125,13 +125,14 @@ body {
 }
 
 .row-left {
+  /* background: azure; */
   display: flex;
   width: 28rem;
   justify-content: flex-start;
-  /* background: azure; */
   height: 4rem;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
+  /* padding-top: 1rem;
+  padding-left: 1rem; */
   box-sizing: border-box;
 }
 
@@ -144,14 +145,16 @@ body {
   fill: #7d99fb;
 }
 
-.logo.hidden {
-  display: none;
-}
-
 .notes {
   /* color: lightgrey; */
   color: darkgrey;
   margin-bottom: .4rem;
+}
+
+.notes-on-click {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .type, 
