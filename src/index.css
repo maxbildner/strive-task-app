@@ -211,5 +211,17 @@ body {
 #not-clicked {
   transition: .5s;
   transition-timing-function: ease-out;
-  transform: translateX(-1.5rem);
+  /* transform: translateX(-1.5rem); */
+}
+
+
+/* when browser width gets smaller than 800px, resize width of rows */
+@media (max-width: 800px) {
+  .App {
+    width: 30rem;
+  }
+
+  .row {
+    height: 5rem;
+  }
 }
