@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/strive-task-app/static/css/main.c88b020a.chunk.css",
+    "main.css": "/strive-task-app/static/css/main.ec748d42.chunk.css",
     "main.js": "/strive-task-app/static/js/main.9fe48605.chunk.js",
     "main.js.map": "/strive-task-app/static/js/main.9fe48605.chunk.js.map",
     "runtime-main.js": "/strive-task-app/static/js/runtime-main.8b7b562d.js",
@@ -8,13 +8,13 @@
     "static/js/2.5840482b.chunk.js": "/strive-task-app/static/js/2.5840482b.chunk.js",
     "static/js/2.5840482b.chunk.js.map": "/strive-task-app/static/js/2.5840482b.chunk.js.map",
     "index.html": "/strive-task-app/index.html",
-    "static/css/main.c88b020a.chunk.css.map": "/strive-task-app/static/css/main.c88b020a.chunk.css.map",
+    "static/css/main.ec748d42.chunk.css.map": "/strive-task-app/static/css/main.ec748d42.chunk.css.map",
     "static/js/2.5840482b.chunk.js.LICENSE.txt": "/strive-task-app/static/js/2.5840482b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8b7b562d.js",
     "static/js/2.5840482b.chunk.js",
-    "static/css/main.c88b020a.chunk.css",
+    "static/css/main.ec748d42.chunk.css",
     "static/js/main.9fe48605.chunk.js"
   ]
 }
