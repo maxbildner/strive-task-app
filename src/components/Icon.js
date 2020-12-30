@@ -40,12 +40,6 @@ class Icon extends React.Component {
         onMouseLeave={() => this.setState({ isMouseOverIcon: false })}
         onClick={onClickIcon}
       >
-        {/* <span
-          className={(isRowClicked || isMouseOverIcon) ? "circle" : "circle hidden"}
-        >
-        </span>
-        {svgLogo} */}
-
         <span
           className={(isRowClicked || isMouseOverIcon) ? (type === "details" ? "circle hidden" : "circle") : "circle hidden"}
         >

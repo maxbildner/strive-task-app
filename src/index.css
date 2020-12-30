@@ -95,7 +95,7 @@ body {
 }
 
 .time {
-  color: lightgrey;
+  color: darkgrey;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -152,6 +152,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #475c7d;
 }
 
 .type, 
@@ -159,7 +160,6 @@ body {
   /* color: #0258a4; */
   /* color: #8e98a7; */
   color: #475c7d;
-  /* font-weight: 600; */
 }
 
 .with {
@@ -210,7 +210,6 @@ svg.details-hovered {
 .complete:hover,
 .details.hovered svg:hover {
   fill: #0258a4;
-  /* transform: scale(1.2); */
 }
 
 .delete svg:hover {
@@ -218,19 +217,9 @@ svg.details-hovered {
   position: relative;
 }
 
-.circle {
-  /* height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  border: 1px solid lightgrey;
-  display: inline-block;
-  box-shadow: 0px 1px 2px lightgrey;
-  position: absolute;
-  bottom: .8rem;
-  right: -32%; */
-  
-  height: 2rem;
-  width: 2rem;
+.circle {  
+  height: 2.25rem;
+  width: 2.25rem;
   border-radius: 50%;
   border: 1px solid lightgrey;
   box-shadow: 0px 1px 2px lightgrey;
@@ -250,6 +239,8 @@ svg.details-hovered {
   transition: .5s;
   transition-timing-function: ease-out;
   transform: translateX(2rem);
+  border: 1px solid #7d99fb;
+  background: #f4f5ff;
 }
 
 #not-clicked {
