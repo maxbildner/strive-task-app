@@ -143,7 +143,8 @@ body {
 }
 
 .notes {
-  color: lightgrey;
+  /* color: lightgrey; */
+  color: darkgrey;
   margin-bottom: .4rem;
 }
 
@@ -151,6 +152,10 @@ body {
 .person {
   color: #0258a4;
   font-weight: 600;
+}
+
+.with {
+  color: darkgrey;
 }
 
 .row-right {
@@ -196,3 +201,15 @@ body {
   transition: all .25s;
   transform-origin: 50% 50%;
 } */
+
+#clicked {
+  transition: .5s;
+  transition-timing-function: ease-out;
+  transform: translateX(1.5rem);
+}
+
+#not-clicked {
+  transition: .5s;
+  transition-timing-function: ease-out;
+  transform: translateX(-1.5rem);
+}

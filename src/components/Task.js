@@ -35,11 +35,12 @@ class Task extends React.Component {
 
     return (
       <div 
-        // className="row" 
         className={isLastTime ? "row last" : (index === 0 ? "row first" : "row")} 
+        id={this.state.isClicked ? "clicked" : "not-clicked"}
         key={index}
         onMouseEnter={() => this.setState({isMouseOver: true})}
         onMouseLeave={() => this.setState({isMouseOver: false})}
+        onClick={() => this.setState({isClicked: !this.state.isClicked})}
       >
         <div className="row-left">
           <span className="logo">{logo}</span>
@@ -48,7 +49,7 @@ class Task extends React.Component {
               {task.notes}
             </div>
             <div className="type-person">
-              <span className="type">{task.type}</span> {(task.type === "LinkedIn message") ? "" : "with"} <span className="person">{task.person}</span>
+              <span className="type">{task.type}</span> {(task.type === "LinkedIn message") ? "" : <span className="with">{"with"}</span>} <span className="person">{task.person}</span>
             </div>
           </div>
         </div>
