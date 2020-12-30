@@ -6,7 +6,7 @@ const predefinedState = {
   "9:00 - 10:00a": {
     1: {
       id: 1,
-      type: "CALL", 	                      // can be "CALL" or "MANUAL", or "LI" (linked in message)
+      type: "Call", 	                      // can be "CALL" or "MANUAL", or "LI" (linked in message)
       person: "Avni Submaranian",
       time: "9:00 - 10:00a",
       notes: "Inbound NY",
@@ -14,7 +14,7 @@ const predefinedState = {
     },
     2: {
       id: 2,
-      type: "MANUAL", 	                      
+      type: "Manual task", 	                      
       person: "Malik Simpson",
       time: "9:00 - 10:00a",
       notes: "Rekindling ancient members",
@@ -22,7 +22,7 @@ const predefinedState = {
     },
     3: {
       id: 3,
-      type: "CALL", 	                      
+      type: "Call", 	                      
       person: "Jabroni F. Myers",
       time: "9:00 - 10:00a",
       notes: "Shaming bottom-feeders",
@@ -32,7 +32,7 @@ const predefinedState = {
   "11:15a - 12:00p": {
     4: {
       id: 4,
-      type: "LI", 	                      
+      type: "LinkedIn message", 	                      
       person: "Yvette Mok",
       time: "11:15a - 12:00p",
       notes: "Ignore and solicit on",
@@ -40,7 +40,7 @@ const predefinedState = {
     },
     5: {
       id: 5,
-      type: "MANUAL", 	                  
+      type: "Manual task", 	                  
       person: "Xavier St. D'Augustine",
       time: "11:15a - 12:00p",
       notes: "Ignore and solicit on",

@@ -133,6 +133,10 @@ body {
   margin-bottom: .4rem;
 }
 
+.type {
+  font-weight: 600;
+}
+
 .person {
   font-weight: 600;
 }
