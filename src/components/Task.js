@@ -66,14 +66,33 @@ class Task extends React.Component {
     }
 
     return (
+      <>
+      <div className={isClicked ? "left-arrow" : "left-arrow hidden"}>
+        <svg
+          height="15pt" width="15pt"
+          data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          // className={isMouseOverRow ? "details-hovered" : ""}
+        ><path d="M174.54,508.94,420.1,263.39a10.74,10.74,0,0,0,0-14.75L174.53,3.06a10.43,10.43,0,0,0-14.75,0L92,70.8a10.43,10.43,0,0,0,0,14.75L262.47,256,92,426.46a10.73,10.73,0,0,0,0,14.75l67.75,67.73A10.43,10.43,0,0,0,174.54,508.94Z" /></svg>
+      </div>
+
       <div 
         className={isLastTime ? "row last" : (index === 0 ? "row first" : "row")} 
-        id={this.state.isClicked ? "clicked" : "not-clicked"}
+        id={isClicked ? "clicked" : "not-clicked"}
         key={index}
         onMouseEnter={() => this.setState({isMouseOver: true})}
         onMouseLeave={() => this.setState({isMouseOver: false})}
         onClick={() => this.setState({isClicked: !this.state.isClicked})}
       >
+        {/* <div className={isClicked ? "left-arrow" : "left-arrow hidden"}>
+          <svg
+            height="15pt" width="15pt"
+            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            // className={isMouseOverRow ? "details-hovered" : ""}
+          ><path d="M174.54,508.94,420.1,263.39a10.74,10.74,0,0,0,0-14.75L174.53,3.06a10.43,10.43,0,0,0-14.75,0L92,70.8a10.43,10.43,0,0,0,0,14.75L262.47,256,92,426.46a10.73,10.73,0,0,0,0,14.75l67.75,67.73A10.43,10.43,0,0,0,174.54,508.94Z" /></svg>
+        </div> */}
+
         <div className="row-left">
           {rowLeft}
         </div>
@@ -100,6 +119,7 @@ class Task extends React.Component {
           />
         </div>
       </div>
+      </>
     );
   }
 }

@@ -125,6 +125,25 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
+.left-arrow {
+  position: absolute;
+  transform: rotate(180deg);
+  margin-top: 1.29rem;
+}
+
+.left-arrow svg:hover {
+  cursor: pointer;
+  fill: #0258a4;
+}
+
+.left-arrow svg {
+  fill: #7d99fb;
+}
+
+.left-arrow.hidden {
+  visibility: hidden;
+}
+
 .row-left {
   /* background: azure; */
   display: flex;
